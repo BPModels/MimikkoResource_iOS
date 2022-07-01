@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import MimikkoResources_iOS
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        MimikkoPackageHelper().setupStageBuiltinPackages()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16CD02F43A877EE5B7BA034E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		16CD02F43A877EE5B7BA034E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1BAA48E2BDED5229A02D13FA /* Pods-MimikkoResources_iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimikkoResources_iOS_Tests.release.xcconfig"; path = "Target Support Files/Pods-MimikkoResources_iOS_Tests/Pods-MimikkoResources_iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		20EF2AA851A038F1AD7B0E8B /* Pods-MimikkoResources_iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimikkoResources_iOS_Example.release.xcconfig"; path = "Target Support Files/Pods-MimikkoResources_iOS_Example/Pods-MimikkoResources_iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		540D1360E39C8A2B7A962011 /* Pods-MimikkoResources_iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimikkoResources_iOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-MimikkoResources_iOS_Example/Pods-MimikkoResources_iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		64B0FA58650F86D26EBA00A2 /* Pods_MimikkoResources_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimikkoResources_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C74633F006DB249BE6D06035 /* MimikkoResources_iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MimikkoResources_iOS.podspec; path = ../MimikkoResources_iOS.podspec; sourceTree = "<group>"; };
+		C74633F006DB249BE6D06035 /* MimikkoResources_iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MimikkoResources_iOS.podspec; path = ../MimikkoResources_iOS.podspec; sourceTree = "<group>"; };
 		E954CE0893F10C2FEEEC4D56 /* Pods_MimikkoResources_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimikkoResources_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7541619DD3E7C0BDF762143 /* Pods-MimikkoResources_iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimikkoResources_iOS_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MimikkoResources_iOS_Tests/Pods-MimikkoResources_iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FBF08A45310D0413B6CCA5F1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FBF08A45310D0413B6CCA5F1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				F7541619DD3E7C0BDF762143 /* Pods-MimikkoResources_iOS_Tests.debug.xcconfig */,
 				1BAA48E2BDED5229A02D13FA /* Pods-MimikkoResources_iOS_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = HYUYCAH232;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = HYUYCAH232;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -314,10 +316,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MimikkoResources_iOS_Example/Pods-MimikkoResources_iOS_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MimikkoResources_iOS/MimikkoResources_iOS.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MimikkoResources_iOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -478,7 +484,9 @@
 			baseConfigurationReference = 540D1360E39C8A2B7A962011 /* Pods-MimikkoResources_iOS_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HYUYCAH232;
 				INFOPLIST_FILE = MimikkoResources_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,7 +501,9 @@
 			baseConfigurationReference = 20EF2AA851A038F1AD7B0E8B /* Pods-MimikkoResources_iOS_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HYUYCAH232;
 				INFOPLIST_FILE = MimikkoResources_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -507,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F7541619DD3E7C0BDF762143 /* Pods-MimikkoResources_iOS_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = HYUYCAH232;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1BAA48E2BDED5229A02D13FA /* Pods-MimikkoResources_iOS_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = HYUYCAH232;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -1,0 +1,27 @@
+PODS:
+  - MimikkoResources_iOS (0.1.0):
+    - ObjectMapper
+    - SSZipArchive
+  - ObjectMapper (4.2.0)
+  - SSZipArchive (2.4.3)
+
+DEPENDENCIES:
+  - MimikkoResources_iOS (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - ObjectMapper
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  MimikkoResources_iOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MimikkoResources_iOS: 0243571b780b6411fa148eeddc1a0f6cdb58e3c0
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+
+PODFILE CHECKSUM: 7e1ff21776618e00e9b46f74becc60808a14b5fc
+
+COCOAPODS: 1.11.3

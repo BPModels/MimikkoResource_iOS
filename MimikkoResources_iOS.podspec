@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MimikkoResources_iOS'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MimikkoResources_iOS.'
+  s.summary          = 'resource manager'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  兽耳资源管理，暂用于管理兽耳角色模块的资源解压、数据存储、数据读取
                        DESC
 
-  s.homepage         = 'https://github.com/tingyusha@kangkanghui.com/MimikkoResources_iOS'
+  s.homepage         = 'https://github.com/BPModels/MimikkoResource_iOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'tingyusha@kangkanghui.com' => 'testshatingyu@gmail.com' }
-  s.source           = { :git => 'https://github.com/tingyusha@kangkanghui.com/MimikkoResources_iOS.git', :tag => s.version.to_s }
+  s.author           = { 'sam' => 'testshatingyu@gmail.com' }
+  s.source           = { :git => 'https://github.com/BPModels/MimikkoResource_iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'MimikkoResources_iOS/Classes/**/*'
   
@@ -39,4 +40,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'ObjectMapper', '4.2.0'
+  s.dependency 'SSZipArchive', '2.4.3'
 end
