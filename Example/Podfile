@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'MimikkoResources_iOS_Example' do
+  pod 'MimikkoResources_iOS', :path => '../'
+
+  target 'MimikkoResources_iOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
